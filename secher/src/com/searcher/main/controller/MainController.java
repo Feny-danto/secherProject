@@ -1,5 +1,7 @@
 package com.searcher.main.controller;
 
+import com.seacher.company.controller.CompanyController;
+
 /*
  * 공용으로 사용하게될 부분이므로 수정이 필요해보이면 얘기하고 수정해주세요
  * 제일 첫 화면이 나올 메인 컨트롤러
@@ -27,6 +29,7 @@ public class MainController {
 				case "2":
 					System.out.println("선택 : "+menu);
 					System.out.println("회사관리 처리");
+					(new CompanyController()).execute();
 					break;
 				case "3":				
 					System.out.println("선택 : "+menu);		
